@@ -5,16 +5,11 @@ import java.util.function.Predicate;
 
 public class LambdaApp {
     public static void main(String[] args) {
-
-//        Predicate<String> predicate = new Predicate<String>() {
-//            @Override
-//            public boolean test(String s) {
-//                return s != null;
-//            }
-//        };
-
-        Predicate<String> predicate = (String value) -> {
-            return value != null;
+        Predicate<String> predicate = new Predicate<String>() {
+            @Override
+            public boolean test(String s) {
+                return s != null;
+            }
         };
 
         Function<String, String> function = new Function<String, String>() {
@@ -24,5 +19,7 @@ public class LambdaApp {
             }
         };
 
+        System.out.println(predicate);
+        System.out.println(function);
     }
 }
