@@ -1,4 +1,4 @@
-package com.silalahi.valentinus.training.median;
+package com.silalahi.valentinus.training.hackerrank;
 
 
 import java.util.Collections;
